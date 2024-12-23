@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Умный дропдаун</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" media="all" href="styles.css">
+</head>
+
+<body>
+
+  <div class="dropdown">
+    <div class="dropdown__value dropdown__value_closed">
+      <div class="dropdown__selected"></div>
+      <input type="text" class="dropdown__input" placeholder="Сделайте свой выбор">
+    </div>
+    <div class="dropdown__list">
+      <div class="not-found">Совпадений не найдено!</div>
+
+      <div class="dropdown__item" data-type="text">
+        Select me! I'm text!
+      </div>
+
+      <div class="dropdown__item" data-type="text">
+        Select me! I'm second text!
+      </div>
+
+      <div class="dropdown__item" data-type="text">
+        Ниязов Фарид
+      </div>
+
+      <div class="dropdown__item" data-type="text">
+        Мир
+      </div>
+
+      <div class="dropdown__item" data-type="img" data-value="кошка, кот">
+        <img src="https://i.pinimg.com/originals/59/54/b4/5954b408c66525ad932faa693a647e3f.jpg" alt="Meow, meow!">
+      </div>
+
+      <div class="dropdown__item" data-type="block" data-value="Желтый блок">
+        <div class="orange">I'm orange block!</div>
+      </div>
+
+      <div class="dropdown__item" data-type="audio" data-value="Выбери меня, птица счастья, музыка">
+        <h3>Птица счастья завтрашнего дня</h3>
+        <audio controls>
+          <source src="https://muzmo.su/stream/mym/aHR0cHM6Ly9tb29zaWMubXkubWFpbC5ydS9maWxlLzZiYWViODM4MTUxYjM3NWJkNTNmNDUxODVkNDg4YTVmLm1wMw==" type="audio/mpeg">
+          Тег audio не поддерживается вашим браузером.
+          <a href="https://muzmo.su/stream/mym/aHR0cHM6Ly9tb29zaWMubXkubWFpbC5ydS9maWxlLzZiYWViODM4MTUxYjM3NWJkNTNmNDUxODVkNDg4YTVmLm1wMw==">Скачайте музыку</a>.
+        </audio>
+      </div>
+
+      <div class="dropdown__item" data-type="text">
+        Пупкин Иван
+      </div>
+
+      <div class="dropdown__item" data-type="text">
+        Иванушки Интернейшнл
+      </div>
+
+      <div class="dropdown__item" data-type="text">
+        Иван Васильевич меняет профессию
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
